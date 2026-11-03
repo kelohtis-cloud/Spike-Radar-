@@ -13,7 +13,7 @@
     if(ws && (ws.readyState===0 || ws.readyState===1)) ws.close();
     setConnection("Connecting");
     ws = new WebSocket(WS_URL);
-    ws.onopen = () => { setConnection("Connected",true); $("pause").disabled=false; send({active_symbols:"brief", product_type:"basic", req_id:1}); };
+    ws.onopen = () => { setConnection("Connected",true); $("pause").disabled=false; send({active_symbols:"brief", req_id:1}); };
     ws.onmessage = ev => {
       let d; try{d=JSON.parse(ev.data)}catch{return}
       if(d.error){setConnection("Feed error");return}
