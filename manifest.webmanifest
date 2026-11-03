@@ -1,0 +1,9 @@
+{
+  "name": "Spike Radar \u2013 Deriv Boom & Crash Alerts",
+  "short_name": "Spike Radar",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#08111f",
+  "theme_color": "#0b1220",
+  "description": "Experimental Deriv Boom and Crash tick activity monitor."
+}
